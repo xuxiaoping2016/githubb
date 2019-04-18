@@ -27,6 +27,14 @@ angular.
         }).state('parent.child', {
             url: '',
             template: 'I am child'
-        });
+        })
+        .state('home', {
+            abstract: true,
+            url: '/home',
+            template: 'I am home <div ui-view></div>'
+        }).state('home.child', {
+            url: '',
+            template: 'I am home child'
+        });;
     }
   ]);
