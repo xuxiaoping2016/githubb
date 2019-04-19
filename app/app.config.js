@@ -34,7 +34,13 @@ angular.
             template: 'I am home <div ui-view></div>'
         }).state('home.child', {
             url: '',
-            template: 'I am home child'
-        });;
+            template: 'I am home child<div ui-view></div>'
+        })
     }
   ]);
+
+
+//   .state('home.child.scope', {
+//     url: '/scope',
+//     template: '路由'
+// });
