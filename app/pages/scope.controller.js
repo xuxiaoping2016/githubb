@@ -50,6 +50,33 @@
           {name: 'FrankyYang'}
         ];
         $scope.filteredArray = filterFilter($scope.array, 'a');
+
+        $scope.friends = [
+          {name:'John', age:25, gender:'boy'},
+          {name:'Jessie', age:30, gender:'girl'},
+          {name:'Johanna', age:28, gender:'girl'},
+          {name:'Joy', age:15, gender:'girl'},
+          {name:'Mary', age:28, gender:'girl'},
+          {name:'Peter', age:95, gender:'boy'},
+          {name:'Sebastian', age:50, gender:'boy'},
+          {name:'Erika', age:27, gender:'girl'},
+          {name:'Patrick', age:40, gender:'boy'},
+          {name:'Samantha', age:60, gender:'girl'}
+        ];
+
+        $scope.users = [
+           {userID:1, username:"cat", nickname:"tom"},
+           {userID:2, username:"xiaofan", nickname:"张小凡"},
+           {userID:3, username:"biyao", nickname:"碧瑶"},
+           {userID:4, username:"luxueqi", nickname:"陆雪琪"},
+           {userID:5, username:"linjingyu", nickname:"林惊羽"},
+           {userID:6, username:"cengshushu", nickname:"曾书书"},
+           {userID:7, username:"zhuque", nickname:"朱雀"},
+           {userID:8, username:"qinglong", nickname:"青龙"},
+           {userID:9, username:"guiwang", nickname:"鬼王"},
+           {userID:10, username:"dushen", nickname:"赌神"},
+           {userID:11, username:"jinpiner", nickname:"金瓶儿"}
+        ] 
       }
 
 

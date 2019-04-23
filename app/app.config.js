@@ -33,8 +33,9 @@ angular.
             url: '/home',
             template: 'I am home <div ui-view></div>'
         }).state('home.child', {
+            abstract: true,
             url: '',
-            template: 'I am home child<div ui-view></div>'
+            template: 'I am home child <div ui-view></div>'
         })
     }
   ]);
