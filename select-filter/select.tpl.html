@@ -1,0 +1,17 @@
+<div class="btn-group-single" dropdown>
+      <button type="button" ng-disabled="disabled" ng-click="clickCallback()" class="btn btn-sm  btn-default" dropdown-toggle>
+        {{selectItem[keyName]}} <span class="caret"></span>
+      </button>
+      <ul ng-class="{'dropdown-menu__scroll' : isScroll}" class="dropdown-menu">
+        <li ng-hide="item.hidden" ng-repeat="item in listData" 
+            class="{{item[keyName]==selectItem[keyName]?'active':''}}"
+            ng-click="selectConfirm(item)">
+          <a href="javascript:">{{item[keyName]}}</a>
+        </li>
+        
+        <li ng-if="!listData || listData.lenth == 0">
+          暂无数据
+        </li>
+
+      </ul>
+    </div>
